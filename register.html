@@ -43,27 +43,55 @@
                 </div>
             </nav>
         <!-- formular na registraciu -->
-        <article>
+        <div class="container-fluid" style="background-color:coral">
             <h1>Registrácia</h1>
                 <p>Registrácia je bezplatná a dobrovoľná. Vďaka registrácií si budete môcť pozrieť Vaše predošlé posudky, 
                     zoznam kompenzácií, o ktoré ste v minulosti žiadali a zaujímavé štatistiky.</p>
 
-            <form method="POST">
-                <p><label>Meno: <input name="meno" type="text" placeholder="Krstné meno" required size="35"></label></p>
-                <p><label>Priezvisko: <input name="priezvisko" type="text" placeholder="Priezvisko" required size="35"></label></p>
-                <p><label>E-mail: <input name="email" type="email" placeholder="adresa@domena.com" required size="35"></label></p>
-                <p><label>Heslo: <input name="heslo" type="password" required size="20"></label></p>
-                <p><label>Potvrdenie hesla: <input name="potvrdenie_heslo" type="password" size="20"></label></p>
-                <p>
-                    <input type="submit" value="Odoslať" />
-                    <input type="reset" value="Vymazať" />
-                </p>
-
+            <form class="form-horizontal" method="POST">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="meno">Meno:</label>
+                    <div class="col-sm-10">
+                        <input name="meno" type="text" class="form-control" placeholder="Krstné meno" id="meno">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="priezvisko">Priezvisko:</label>
+                    <div class="col-sm-10">
+                        <input name="priezvisko" type="text" class="form-control" placeholder="Priezvisko" id="priezvisko">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input name="email" type="email" class="form-control" placeholder="adresa@domena.com" id="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="heslo">Heslo:</label>
+                    <div class="col-sm-10">
+                        <input name="heslo" type="password" class="form-control" id="heslo">
+                    </div>
+                </div>
+                <div class="form-group">
+                   <label class="control-label col-sm-2" for="potvrdenie_heslo">Potvrdenie hesla:</label>
+                   <div class="col-sm-10">
+                       <input name="potvrdenie_heslo" type="password" class="form-control" id="potvrdenie_heslo">
+                   </div> 
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Odoslať</button>
+                        <button type="reset" class="btn btn-default">Vymazať</button>
+                    </div>
+                </div>
+                
+                
             </form>
-        </article>
+        </div>
 
         <!-- footer -->
-        <footer>  <p>Copyright ©Natália Rakovská 2017</p> </footer> 
+        <footer class="container-fluid" style="background-color:aquamarine">  <p>Copyright ©Natália Rakovská 2017</p> </footer>  
         
     </div>        
 </body>
