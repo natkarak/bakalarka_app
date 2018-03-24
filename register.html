@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aplikácia</title>
+
+    <meta name="author" content="Natália Rakovská" lang="sk">
+    <meta name="keywords" content="">
+    <meta name="description" content="Informatívna online aplikácia k procesu získania peňažných kompenzácií pre zdravotne ťažko postihnutých občanov">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css\bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+              
+        <!-- navigacia/ menu -->
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="index.html">Rozprávkovo</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html"><span>Domov</span></a></li>           
+                            <!--<li><a href="register.html"><span>Registrácia</span></a></li> -->
+                            <li><a href="prehlad.html"><span>Môj prehľad</span></a></li>
+                            <li><a href="posudky.html"><span>Posudky ???</span></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class='active'><a href="register.html"><span class="glyphicon glyphicon-user"></span> Registrácia</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Prihlásenie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!-- formular na registraciu -->
+        <article>
+            <h1>Registrácia</h1>
+                <p>Registrácia je bezplatná a dobrovoľná. Vďaka registrácií si budete môcť pozrieť Vaše predošlé posudky, 
+                    zoznam kompenzácií, o ktoré ste v minulosti žiadali a zaujímavé štatistiky.</p>
+
+            <form method="POST">
+                <p><label>Meno: <input name="meno" type="text" placeholder="Krstné meno" required size="35"></label></p>
+                <p><label>Priezvisko: <input name="priezvisko" type="text" placeholder="Priezvisko" required size="35"></label></p>
+                <p><label>E-mail: <input name="email" type="email" placeholder="adresa@domena.com" required size="35"></label></p>
+                <p><label>Heslo: <input name="heslo" type="password" required size="20"></label></p>
+                <p><label>Potvrdenie hesla: <input name="potvrdenie_heslo" type="password" size="20"></label></p>
+                <p>
+                    <input type="submit" value="Odoslať" />
+                    <input type="reset" value="Vymazať" />
+                </p>
+
+            </form>
+        </article>
+
+        <!-- footer -->
+        <footer>  <p>Copyright ©Natália Rakovská 2017</p> </footer> 
+        
+    </div>        
+</body>
+</html>
