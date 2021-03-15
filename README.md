@@ -1,3 +1,3 @@
 # bakalarka_app
 
-I created this app as a demo version for my Bachelor's degree thesis.
+This was my first version of the frot end part of an app I was creating for my Bachelor's degree thesis.
